@@ -24,5 +24,7 @@ deploy:
   on:
     branch: master    
 before_deploy:
+  - rm -r !(docs)
   - touch .nojekyll
   - sed -i '/docs/d' .gitignore
+  
