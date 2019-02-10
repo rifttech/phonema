@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "test": "jest --config jestconfig.json",
-    "docs": "typedoc --out docs ./src",
+    "docs": "typedoc --out docs ./src  --exclude ./src/**/*.spec.ts",
     "coveralls": "jest --config jestconfig.json --coverage && cat ./coverage/lcov.info | coveralls",
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
