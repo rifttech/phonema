@@ -25,4 +25,4 @@ deploy:
     branch: master    
 before_deploy:
   - touch .nojekyll
-  - sed -i '/docs' .gitignore
+  - sed -i '/docs/d' .gitignore
