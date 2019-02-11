@@ -25,6 +25,8 @@ deploy:
     branch: master    
 before_deploy:
   - rm -r !(docs)
+  - rm .gitignore .npmignore .prettierrc .travis.yml
   - touch .nojekyll
-  - sed -i '/docs/d' .gitignore
+  - mv docs/* .
+  - rm -r docs
   
