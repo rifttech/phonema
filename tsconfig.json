@@ -1,13 +1,15 @@
 {
     "compilerOptions": {
-      "target": "es5",
+      "target": "es6",
       "module": "commonjs",
       "declaration": true,
       "outDir": "./lib",
-      "strict": true
+      "strict": true,
+      "lib": ["es6","es2015", "es2016"]
     },
     "include": ["src"],
-    "exclude": ["node_modules", "**/__tests__/*"],
+    "exclude": ["node_modules", "**/__tests__/*", "lib"],
+
     "typedocOptions": {
       "mode": "modules",
       "out": "docs"

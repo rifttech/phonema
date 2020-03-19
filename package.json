@@ -41,5 +41,8 @@
     "tslint-config-prettier": "^1.17.0",
     "typedoc": "^0.17.1",
     "typescript": "^3.2.2"
+  },
+  "dependencies": {
+    "@types/node": "^13.9.2"
   }
 }
